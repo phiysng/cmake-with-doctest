@@ -1,3 +1,7 @@
-add_library (ALGORITHM_IMPL quick_sort.h)
+set(CMAKE_CXX_STANDARD 14)
 
-#target_link_libraries (demo ALGORITHM_IMPL)
+add_library (Sqr quick_sort.cpp)
+
+
+add_executable (demo main.cxx)
+target_link_libraries (demo Sqr)
