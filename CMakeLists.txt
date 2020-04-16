@@ -14,5 +14,6 @@ enable_testing()
 #add_executable(test2 test2.cpp $<TARGET_OBJECTS:test_main>)
 #add_test(NAME test2 COMMAND test2)
 
+SUBDIRS(src)
 SUBDIRS(tests)
 

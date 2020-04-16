@@ -15,18 +15,14 @@ jobs:
     - uses: actions/checkout@v2
       
     - name: mkdir
-      run: mkdir bin && echo "success"
+      run: mkdir bin
       
-    - name: pwd
-      run: pwd
-    - name : ls
-      run: ls .
     - name: generate Makefile
-      run: cmake .. && echo "success"
+      run: cmake ..
       working-directory: bin
-    - name: make && echo "success"
+    - name: make 
       run: make
       working-directory: bin
-    - name: make test && echo "success"
+    - name: make test
       run: make test
       working-directory: bin
