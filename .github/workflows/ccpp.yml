@@ -14,12 +14,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: mkdir
-      run: mkdir build
+      run: mkdir bin && echo "success"
     - name: cd
-      run: cd build
+      run: cd bin && echo "success"
     - name: generate Makefile
-      run: cmake ..
-    - name: make
+      run: cmake .. && echo "success"
+    - name: make && echo "success"
       run: make
-    - name: make test
+    - name: make test && echo "success"
       run: make test
