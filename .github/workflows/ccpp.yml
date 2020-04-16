@@ -19,8 +19,6 @@ jobs:
       
     - name: pwd
       run: pwd
-    - name: tree
-      run: tree .
     - name : ls
       run: ls .
     - name: generate Makefile
