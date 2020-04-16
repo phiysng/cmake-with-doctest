@@ -13,15 +13,22 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      
     - name: mkdir
       run: mkdir bin && echo "success"
-    - name: cd
-      run: cd bin && echo "success"
+      
     - name: pwd
       run: pwd
+    - name: tree
+      run: tree .
+    - name : ls
+      run: ls .
     - name: generate Makefile
       run: cmake .. && echo "success"
+      working-directory: bin
     - name: make && echo "success"
       run: make
+      working-directory: bin
     - name: make test && echo "success"
       run: make test
+      working-directory: bin
