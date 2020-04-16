@@ -17,6 +17,8 @@ jobs:
       run: mkdir bin && echo "success"
     - name: cd
       run: cd bin && echo "success"
+    - name: pwd
+      run: pwd
     - name: generate Makefile
       run: cmake .. && echo "success"
     - name: make && echo "success"
